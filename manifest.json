@@ -1,0 +1,77 @@
+{
+    "name": "FacetCreationExtension",
+    "fantasyName": "Facet Creation Extension",
+    "vendor": "JJ",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.0",
+    "description": "This is an extension to implement facet creation &amp; UI update on the PLP!",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/FacetCreationExtension.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/FacetCreationExtension/Configuration/FacetCreationExtension.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/FacetCreationExtension/Templates/jj_facetcreationextension_facetcreationextension.tpl",
+                    "Modules/FacetCreationExtension/Templates/jj_facet_browse.tpl",
+                    "Modules/FacetCreationExtension/Templates/jj_facets_navigation.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/FacetCreationExtension/Sass/_facetcreationextension-facetcreationextension.scss"
+        },
+        "files": [
+            "Modules/FacetCreationExtension/Sass/_facetcreationextension-facetcreationextension.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/FacetCreationExtension/JavaScript/JJ.FacetCreationExtension.FacetCreationExtension.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/FacetCreationExtension/JavaScript/JJ.FacetCreationExtension.FacetCreationExtension.js",
+                    "Modules/FacetCreationExtension/JavaScript/FacetCreationExtension.View.js",
+                    "Modules/FacetCreationExtension/JavaScript/JJ.FacetCreationExtension.FacetCreationExtension.Model.js",
+                    "Modules/FacetCreationExtension/JavaScript/JJ.FacetCreationExtension.FacetCreationExtension.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/FacetCreationExtension/SuiteScript/JJ.FacetCreationExtension.FacetCreationExtension.js",
+        "files": [
+            "Modules/FacetCreationExtension/SuiteScript/JJ.FacetCreationExtension.FacetCreationExtension.js",
+            "Modules/FacetCreationExtension/SuiteScript/FacetCreationExtension.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/FacetCreationExtension/SuiteScript2/FacetCreationExtension.Service.ss"
+        ]
+    }
+}
