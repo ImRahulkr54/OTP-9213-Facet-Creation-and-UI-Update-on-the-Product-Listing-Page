@@ -32,6 +32,21 @@
   min-height: 100px;
 }
 
+@media screen and (max-width: 768px) {
+
+  [data-view="Facets.FacetedNavigationItems"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .facets-faceted-navigation-item-facet-group{
+    display: block;
+    margin: auto;
+  }
+
+}
+
 .facets-faceted-navigation-item-facet-group{
   width: 33%;
 }
@@ -50,13 +65,20 @@
     text-transform: uppercase;
 }
 
- 
 .facets-faceted-navigation-item-facet-group-expander.collapsed .facets-faceted-navigation-item-facet-group-expander-icon::before {
-    content: '+';
+
+  content: '+';
+  font-weight: 700;
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+
 }
- 
+
 .facets-faceted-navigation-item-facet-group-expander:not(.collapsed) .facets-faceted-navigation-item-facet-group-expander-icon::before {
-    content: '-';
+  content: '-';
+  font-weight: 700;
+  font-size: 23px;
+  font-family: Arial, sans-serif;
 }
 
 .facets-faceted-navigation-item-optionlist-extra-wrapper{

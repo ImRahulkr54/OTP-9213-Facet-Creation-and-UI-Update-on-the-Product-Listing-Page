@@ -1,3 +1,14 @@
+<script>
+	jQuery(document).ready(function () {
+    jQuery('.facets-faceted-navigation-item-facet-group-expander').each(function () {
+        const $expander = jQuery(this);
+        const targetId = $expander.attr('data-target');
+        $expander.addClass('collapsed');
+        jQuery(targetId).removeClass('in').addClass('collapse');
+    });
+	});
+</script>
+
 <section class="facets-facet-browse">
 	<div data-cms-area="item_list_banner" data-cms-area-filters="page_type"></div>
 
